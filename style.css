@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+}
+.header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 9999;
+}
+.header_logo {
+  height: 48px;
+  margin-left: 4%;
+}
+.header_menu {
+  display: flex;
+  width: 30%;
+  margin-right: 10%;
+}
+.menu_table {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+}
+.menu_item {
+  display: block;
+}
+.menu_item a {
+  text-decoration: none;
+  color: black;
+}
+.menu_divide {
+  display: block;
+}
+.presentation {
+  margin-top: 60px;
+  width: 100%;
+  height: 90%;
+  background-image: url(./elementy-min/tlo1-min.png);
+  background-size: cover;
+}
+.presentation::after {
+  content: "";
+  display: block;
+  width: 480px;
+  height: 165px;
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  background-image: url(./elementy-min/czarne1a-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.description {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+.description_drepta {
+  color: #b54d61;
+  font-weight: 600;
+  position: absolute;
+  font-size: 24px;
+  top: 10%;
+  left: 150px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.description_background {
+  background-image: url(./elementy-min/tlo2-min.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.description_title {
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 30px;
+}
+.description_description {
+  margin-top: 40px;
+  font-weight: 200;
+  line-height: 23px;
+}
+.description_textbox {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 25%;
+  color: white;
+}
+.description_marked {
+  font-weight: 500;
+  text-decoration: none;
+}
+.aboutus {
+  width: 100%;
+  height: 78%;
+  position: relative;
+  font-weight: 200;
+  background-image: url(./elementy-min/tlo3a-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.aboutus_flex {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutus_article {
+  width: 20vw;
+  margin-top: 5%;
+}
+.aboutus_icon {
+  margin-bottom: 10%;
+  width: 50px;
+  margin-top: 50px;
+}
+.aboutus_title {
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-weight: 200;
+}
+.aboutus_description {
+  line-height: 20px;
+}
+.aboutus_footer {
+  width: 100%;
+  height: 120px;
+  background-color: #555;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutus_footer p {
+  margin-right: -180px;
+  color: white;
+  font-size: 25px;
+}
+.aboutus_footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  font-weight: 600;
+  background-color: #b54d61;
+}
+.offerts {
+  width: 100%;
+  height: 60%;
+}
+.offerts_text {
+  width: 70%;
+  margin: auto;
+  padding-top: 65px;
+}
+.offerts_title {
+  margin-bottom: 25px;
+}
+.offerts_offert {
+  width: 20vw;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offerts_flex {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.offerts .offert_name {
+  text-align: center;
+  width: 100%;
+  background-color: #b54d61;
+  display: block;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+}
+.offerts .offert_description {
+  height: 180px;
+}
+.offerts .offert_more {
+  border-radius: 50%;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+}
+.projects {
+  width: 100%;
+  height: 60%;
+  background-color: red;
+}
+.projects_line {
+  height: 10px;
+  width: 100%;
+  background-color: #b54d61;
+}
+.projects_text {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.projects_more {
+  display: block;
+}
+.projects_name {
+  width: 25vw;
+}
+.projects_arrow {
+  border-radius: 50%;
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+}
+.projects_link {
+  margin-left: 15px;
+}
+.projects_flex {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  width: 100%;
+  height: 40%;
+  background-color: #555;
+  position: relative;
+}
+.footer_contact {
+  position: absolute;
+  bottom: 80px;
+  left: 120px;
+}
+.footer_info {
+  display: flex;
+  flex-direction: column;
+}
+.footer_email {
+  margin-bottom: 30px;
+}
+.footer_title {
+  position: absolute;
+  top: 80px;
+  right: 240px;
+  background-color: #b54d61;
+}
